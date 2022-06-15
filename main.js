@@ -36,7 +36,7 @@ let array_gifs_even = array_gifs.slice(0, number_of_cards/2);
 
 array_gifs_even.sort(comparator);
 
-//Input of Game Cards
+
 for(let i = 0; i < number_of_cards; i++) {
     row_cards.innerHTML = row_cards.innerHTML + `
         <div class="card" data-identifier="card" onclick="game_card_select(this)">
@@ -50,12 +50,12 @@ for(let i = 0; i < number_of_cards; i++) {
     `;
 }
 
-//Randomize Array
+
 function comparator() { 
 	return Math.random() - 0.5; 
 }
 
-//Card Game Select
+
 function game_card_select(card_game) {
     if(fliped_cards === true){
         return;
@@ -67,7 +67,7 @@ function game_card_select(card_game) {
     turn_down.classList.add("card-selected-back");
     turn_down2.classList.add("card-selected-front");
 
-    //Break Point Counter
+    
     if(counter_move === 0){
         break_increment = setInterval(game_time_increment, 1000);
         let play_pause_button_visibility = document.querySelector(".play-pause");
@@ -111,7 +111,7 @@ function game_card_select(card_game) {
     setTimeout(end_game, 1000);
 }
 
-//Turn Up Card Game
+
 function turn_up() {
     attempt1.classList.remove("card-selected-back");
     attempt1f.classList.remove("card-selected-front");
@@ -122,7 +122,7 @@ function turn_up() {
     fliped_cards = false;
 }
 
-//Reset Counter Game
+
 function reset_counter() {
     counter = 1;
 
@@ -193,12 +193,12 @@ function play_pause() {
     }
 }
 
-//Restart Game
+
 function restart_game() {
     location.reload(true);
 }
 
-//Game Time Increment
+
 function game_time_increment() {
     let initial_time = document.querySelector(".timer .timer-number");
     initial_time.innerHTML = counter_game_time++;
