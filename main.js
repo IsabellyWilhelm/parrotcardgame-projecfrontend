@@ -130,7 +130,7 @@ function reset_counter() {
     attempt2 = 0;
     attempt1f = 0;
     attempt2f = 0;
-
+    
     fliped_cards = false;
 }
 
