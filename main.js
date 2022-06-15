@@ -9,7 +9,7 @@ let fliped_cards = false;
 let break_increment;
 
 
-let number_of_cards = parseInt(prompt("Com quantas cartas você deseja começar? (Escolher números que sejam pares)"));
+let number_of_cards = parseInt(prompt("Com quantas cartas você deseja começar? (Escolher números que sejam pares entre 4 a 14)"));
 let even_number = number_of_cards % 2;
 let row_cards = document.querySelector(".row-cards");
 
@@ -25,7 +25,7 @@ let array_gifs = [
 
 
 while(even_number !== 0 || number_of_cards === null || number_of_cards < 4 || number_of_cards > 14){
-    number_of_cards = parseInt(prompt("Com quantas cartas você deseja começar? (que sejam pares)"));
+    number_of_cards = parseInt(prompt("Com quantas cartas você deseja começar? (que sejam pares entre 4 a 14)"));
     even_number = number_of_cards % 2;
 }
 
@@ -130,7 +130,7 @@ function reset_counter() {
     attempt2 = 0;
     attempt1f = 0;
     attempt2f = 0;
-    
+
     fliped_cards = false;
 }
 
