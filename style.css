@@ -199,11 +199,11 @@ body{
 }
 
 @media (max-width: 700px) {
-    .game-title-content{
+    .game-titulo-content{
         margin-bottom: 27px;   
     }
 
-    .game-title{
+    .game-titulo{
         font-size: 36px;
         text-align: center;
         letter-spacing: -0.004em;
