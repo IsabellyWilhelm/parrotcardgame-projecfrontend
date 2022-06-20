@@ -31,6 +31,7 @@ body{
     width: 1000px;
 }
 
+
 .row-cards{
     display: flex;
     flex-wrap: wrap;

@@ -8,7 +8,6 @@ let counter_game_time = 0;
 let fliped_cards = false;
 let break_increment;
 
-
 let number_of_cards = parseInt(prompt("Com quantas cartas você deseja começar? (Escolher números que sejam pares entre 4 a 14)"));
 let even_number = number_of_cards % 2;
 let row_cards = document.querySelector(".row-cards");
